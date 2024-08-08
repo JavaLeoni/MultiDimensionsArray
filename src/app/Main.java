@@ -176,6 +176,8 @@ public class Main {
             loopColumnIndex = arrayToCalculate.length - 1 - loopIndex;
             tempSuma += arrayToCalculate[loopRowIndex][loopColumnIndex];
         }
+        if (tempSuma != magicSuma) return false;
+        
         return tempSuma == magicSuma;
     }
 }
